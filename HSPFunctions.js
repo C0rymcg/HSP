@@ -1,10 +1,3 @@
-realMod = function(x, n) {
-		return ((x%n)+n)%n;
-};
-
-
-
-
 //**Hue Saturation Perceptual-Brightness
 function RGBtoHSP(color){
 	var r = color.r / 255; var g = color.g / 255; var b = color.b / 255;
@@ -272,4 +265,8 @@ function polynomialInterpolation(min, max, points, x){
 	
 	return lerp(min, max, result);
 }
+
+realMod = function(x, n) {
+	return ((x%n)+n)%n;
+};
 
